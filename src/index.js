@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes/index.jsx';
 
 ReactDOM.render(
-  <div>
-    <h1>Hello world</h1>
-  </div>
-  , document.getElementById('root'));
+  <Router
+  // history={ BrowserRouter }
+  routes={ Routes } 
+  
+  />,
+  document.getElementById('root'));
